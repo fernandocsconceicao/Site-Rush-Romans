@@ -11,9 +11,9 @@
     
     <header>
         <ul>
-            <li><button class="menuButton"><a href="index.html" target="blank">Rush Romans</a></button></li>
-            <li><button class="menuButton"><a href="multimidia.html">Multimídia</a></button></li>
-            <li><button class="menuButton"><a href="inscricao.html">Inscreva-se </a></button></li>
+            <li><button class="menuButton" onclick="index()"><a href="index.html" target="blank">Rush Romans</a></button></li>
+            <li><button class="menuButton" onclick="multimidia()"><a href="multimidia.html">Multimídia</a></button></li>
+            <li><button class="menuButton" onclick="inscricao()"><a href="inscricao.html">Inscreva-se </a></button></li>
         </ul>
     </header>
     <main>
@@ -35,7 +35,7 @@
         </div>
         <div class="spacer2"></div>
         <div class="spacer2"></div>
-        <button class="btnInscreva-se">
+        <button class="btnInscreva-se" onclick="inscricao()">
             <a class="btnInscreva-seTxt" href="inscricao.html">
                 Inscreva-se
             </a>
@@ -43,5 +43,21 @@
     </div>
  
 </main>
+
 </body>
+<!--Funcionalidade do menu-->
+<script lang="javascript">
+    function inscricao(){
+       location.replace("inscricao.html")
+        
+    }
+    function multimidia(){
+       location.replace("multimidia.html")
+        
+    }
+    function index(){
+       location.replace("index.html")
+        
+    }
+</script>
 </html>
